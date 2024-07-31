@@ -1,18 +1,37 @@
 ﻿using dotnet.Models;
 using System.Globalization;
 
+DateTime data = DateTime.Now;
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+Console.WriteLine(data);
+Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+Console.WriteLine(data.ToString("dd/MM/yyyy"));
+Console.WriteLine(data.ToString("dd-MM-yyyy"));
+Console.WriteLine(data.ToString("dd/M/yyyy"));
+Console.WriteLine(data.ToString("dd/M/yyyy"));
+Console.WriteLine(data.ToString("HH:mm"));
+Console.WriteLine(data.ToString("hh:mm"));
 
-decimal valorMonetario = 25489.63M;
 
-Console.WriteLine(valorMonetario.ToString("C2"));
 
-double porcentagem = .3421;
-Console.WriteLine(porcentagem.ToString("P"));
 
-int numero = 123456;
-Console.WriteLine(numero.ToString("##-##-##"));
+
+
+
+//======================================================================
+
+
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+
+// decimal valorMonetario = 25489.63M;
+
+// Console.WriteLine(valorMonetario.ToString("C2"));
+
+// double porcentagem = .3421;
+// Console.WriteLine(porcentagem.ToString("P"));
+
+// int numero = 123456;
+// Console.WriteLine(numero.ToString("##-##-##"));
 
 
 //======================================================================
