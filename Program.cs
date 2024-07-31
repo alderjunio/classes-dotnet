@@ -1,20 +1,27 @@
 ﻿using dotnet.Models;
 using System.Globalization;
 
-DateTime data = DateTime.Now;
+
+string dataString = "2022-04-17 18:00";
+
+DateTime.TryParseExact(dataString, 
+                "yyyy-MM-dd HH:mm", 
+                CultureInfo.InvariantCulture, 
+                DateTimeStyles.None, 
+                out DateTime data);
 
 Console.WriteLine(data);
-Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
-Console.WriteLine(data.ToString("dd/MM/yyyy"));
-Console.WriteLine(data.ToString("dd-MM-yyyy"));
-Console.WriteLine(data.ToString("dd/M/yyyy"));
-Console.WriteLine(data.ToString("dd/M/yyyy"));
-Console.WriteLine(data.ToString("HH:mm"));
-Console.WriteLine(data.ToString("hh:mm"));
 
 
 
-
+// Console.WriteLine(data);
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+// Console.WriteLine(data.ToString("dd/MM/yyyy"));
+// Console.WriteLine(data.ToString("dd-MM-yyyy"));
+// Console.WriteLine(data.ToString("dd/M/yyyy"));
+// Console.WriteLine(data.ToString("dd/M/yyyy"));
+// Console.WriteLine(data.ToString("HH:mm"));
+// Console.WriteLine(data.ToString("hh:mm"));
 
 
 
