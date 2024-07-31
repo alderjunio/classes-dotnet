@@ -1,42 +1,12 @@
 ﻿using dotnet.Models;
 using System.Globalization;
 
-
-
-string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
+string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura1.txt");
 
 foreach(string linha in linhas)
 {
     Console.WriteLine(linha);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //====================================================================
