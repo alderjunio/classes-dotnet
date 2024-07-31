@@ -7,10 +7,8 @@ namespace dotnet.Models
 
         public string Nome 
         { 
-            get
-            {
-                return _nome.ToUpper();
-            }           
+            get => _nome.ToUpper();
+                     
             
             set
             {
