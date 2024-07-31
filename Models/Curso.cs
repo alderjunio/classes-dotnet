@@ -9,5 +9,10 @@ namespace dotnet.Models
         {
             Alunos.Add(aluno);
         }
+
+        public int ExibirQuantidadeDeAlunosMatriculados(){
+            int quantidade = Alunos.Count;
+            return quantidade;
+        }
     }
 }
