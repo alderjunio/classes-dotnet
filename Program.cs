@@ -1,34 +1,52 @@
 ﻿using dotnet.Models;
 using System.Globalization;
 
+new ExemploExcecao().Metodo1();
+
+
+
+
+
+
+
+
+
+
+
+
+
+//=================================================================================================================
+
+
+
 // string[] linhasExemplo = File.ReadAllLines("Arquivos/arquivoLeitura1.txt");
 // Console.WriteLine("Chegou até aqui");
 
-try
-{
-    string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura1.txt");
+// try
+// {
+//     string[] linhas = File.ReadAllLines("Arquivos/arquivoLeitura.txt");
 
-    foreach (string linha in linhas)
-    {
-        Console.WriteLine(linha);
-    }
-}
-catch (FileNotFoundException ex)
-{
-    Console.WriteLine($"Ocorreu um erro nao leitura do arquivo. O Arquivo não foi encontrado. {ex.Message}");
-}
-catch (DirectoryNotFoundException ex)
-{
-    Console.WriteLine($"Ocorreu um erro nao leitura do arquivo. O caminho da pasta não foi encontrado. {ex.Message}");
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
-}
-finally
-{
-Console.WriteLine("Chegou até aqui");
-}
+//     foreach (string linha in linhas)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// catch (FileNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro nao leitura do arquivo. O Arquivo não foi encontrado. {ex.Message}");
+// }
+// catch (DirectoryNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro nao leitura do arquivo. O caminho da pasta não foi encontrado. {ex.Message}");
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Ocorreu uma exceção genérica. {ex.Message}");
+// }
+// finally
+// {
+// Console.WriteLine("Chegou até aqui");
+// }
 
 
 
