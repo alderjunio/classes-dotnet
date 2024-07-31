@@ -21,8 +21,7 @@ namespace dotnet.Models
 
         public int Idade         
         { 
-            get => _idade;
-             
+            get => _idade;             
             
             set
             {
