@@ -1,3 +1,5 @@
+using System.Runtime.Intrinsics.X86;
+
 namespace dotnet.Models
 {
     public class Pessoa    {
@@ -19,6 +21,9 @@ namespace dotnet.Models
             }
         }
 
+        public string Sobrenome { get; set; }
+        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper();
+
         public int Idade         
         { 
             get => _idade;             
@@ -30,13 +35,12 @@ namespace dotnet.Models
                     throw new ArgumentException("A idade não pode ser menor que zero");
                 }
                 _idade = value;
-            }
-            
+            }            
         }
 
         public void Apresentar()
         {
-            Console.WriteLine($"Nome: {Nome}, Idade: {Idade}");
+            Console.WriteLine($"Nome: {NomeCompleto} Idade: {Idade}");
         }
     }
 }
