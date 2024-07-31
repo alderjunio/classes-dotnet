@@ -1,23 +1,15 @@
-﻿
-using dotnet.Models;
+﻿using dotnet.Models;
+using System.Globalization;
 
 
-decimal valorMonetario = 82.40M;
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+
+decimal valorMonetario = 25489.63M;
 
 Console.WriteLine($"{valorMonetario:C}");
 
 
-
-
-
-
-
-
-
 //======================================================================
-
-
-
 
 // int numero1 = 10;
 // int numero2 = 20;
@@ -28,16 +20,7 @@ Console.WriteLine($"{valorMonetario:C}");
 
 
 
-
-
-
-
-
-
-// ==============================================================
-
-
-
+// ========================================================================
 
 
 // Pessoa p1 = new Pessoa("Alder", "Costa");
@@ -52,9 +35,7 @@ Console.WriteLine($"{valorMonetario:C}");
 // cursoDeIngles.ListarAlunos();
 
 
-
-
-// ==============================================================
+// ==========================================================================
 
 
 
