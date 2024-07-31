@@ -3,6 +3,6 @@ using dotnet.Models;
 
 Pessoa pessoa = new Pessoa();
 
-pessoa.Nome = "Alder";
+pessoa.Nome = "alder";
 pessoa.Idade = 41;
 pessoa.Apresentar();
