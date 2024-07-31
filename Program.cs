@@ -1,6 +1,8 @@
 ﻿using dotnet.Models;
 using System.Globalization;
 
+// string[] linhasExemplo = File.ReadAllLines("Arquivos/arquivoLeitura1.txt");
+// Console.WriteLine("Chegou até aqui");
 
 try
 {
@@ -10,6 +12,14 @@ try
     {
         Console.WriteLine(linha);
     }
+}
+catch (FileNotFoundException ex)
+{
+    Console.WriteLine($"Ocorreu um erro nao leitura do arquivo. O Arquivo não foi encontrado. {ex.Message}");
+}
+catch (DirectoryNotFoundException ex)
+{
+    Console.WriteLine($"Ocorreu um erro nao leitura do arquivo. O caminho da pasta não foi encontrado. {ex.Message}");
 }
 catch (Exception ex)
 {
