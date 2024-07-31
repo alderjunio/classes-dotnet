@@ -1,17 +1,60 @@
 ﻿
 using dotnet.Models;
 
-Pessoa p1 = new Pessoa("Alder", "Costa");
-Pessoa p2 = new Pessoa("Helen", "Moreno");
 
-Curso cursoDeIngles = new Curso();
-cursoDeIngles.Nome = "Ingles Básico";
-cursoDeIngles.Alunos = new List<Pessoa>();
+decimal valorMonetario = 82.40M;
 
-cursoDeIngles.AdicionarAluno(p1);
-cursoDeIngles.AdicionarAluno(p2);
-cursoDeIngles.ListarAlunos();
+Console.WriteLine($"{valorMonetario:C}");
 
+
+
+
+
+
+
+
+
+//======================================================================
+
+
+
+
+// int numero1 = 10;
+// int numero2 = 20;
+
+// int resultado = numero1 + numero2;
+
+// Console.WriteLine($"A soma de {numero1} + {numero2} é igual a {resultado}");
+
+
+
+
+
+
+
+
+
+// ==============================================================
+
+
+
+
+
+// Pessoa p1 = new Pessoa("Alder", "Costa");
+// Pessoa p2 = new Pessoa("Helen", "Moreno");
+
+// Curso cursoDeIngles = new Curso();
+// cursoDeIngles.Nome = "Ingles Básico";
+// cursoDeIngles.Alunos = new List<Pessoa>();
+
+// cursoDeIngles.AdicionarAluno(p1);
+// cursoDeIngles.AdicionarAluno(p2);
+// cursoDeIngles.ListarAlunos();
+
+
+
+
+// ==============================================================
 
 
 
