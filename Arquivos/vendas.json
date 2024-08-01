@@ -2,16 +2,19 @@
   {
     "Id": 1,
     "Produto": "Marreta",
-    "Preco": 25.00
+    "Preco": 25.00,
+    "DataVenda": "2024-07-31T22:47:16.603053-04:00"
   },
   {
     "Id": 2,
     "Produto": "Serrote",
-    "Preco": 45.00
+    "Preco": 45.00,
+    "DataVenda": "2024-07-31T22:47:16.603053-04:00"
   },
   {
     "Id": 3,
     "Produto": "Esquadro",
-    "Preco": 27.99
+    "Preco": 27.99,
+    "DataVenda": "2024-07-31T22:47:16.603053-04:00"
   }
 ]
