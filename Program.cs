@@ -1,7 +1,14 @@
 ﻿using dotnet.Models;
 using System.Globalization;
+using Newtonsoft.Json;
 
-new ExemploExcecao().Metodo1();
+Venda v1 = new Venda(1, "material de escritório", 25.00M);
+
+string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+
+Console.WriteLine(serializado);
+
+
 
 
 
