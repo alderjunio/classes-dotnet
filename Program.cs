@@ -2,9 +2,17 @@
 using System.Globalization;
 using Newtonsoft.Json;
 
-Venda v1 = new Venda(1, "Marreta", 25.00M);
+List<Venda> listaVendas = new List<Venda>();
 
-string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
+Venda v1 = new Venda(1, "Marreta", 25.00M);
+Venda v2 = new Venda(2, "Serrote", 45.00M);
+Venda v3 = new Venda(3, "Esquadro", 27.99M);
+
+listaVendas.Add(v1);
+listaVendas.Add(v2);
+listaVendas.Add(v3);
+
+string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indented);
 
 File.WriteAllText("Arquivos/vendas.json", serializado);
 

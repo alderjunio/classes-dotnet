@@ -1,5 +1,17 @@
-{
-  "Id": 1,
-  "Produto": "Marreta",
-  "Preco": 25.00
-}
+[
+  {
+    "Id": 1,
+    "Produto": "Marreta",
+    "Preco": 25.00
+  },
+  {
+    "Id": 2,
+    "Produto": "Serrote",
+    "Preco": 45.00
+  },
+  {
+    "Id": 3,
+    "Produto": "Esquadro",
+    "Preco": 27.99
+  }
+]
